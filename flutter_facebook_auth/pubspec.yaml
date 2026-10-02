@@ -4,7 +4,7 @@ version: 7.2.0
 homepage: https://github.com/darwin-morocho/flutter-facebook-auth
 
 environment:
-  sdk: ">=3.3.0 <4.0.0"
+  sdk: ">=3.10.0 <4.0.0"
   flutter: ">=3.38.0"
 
 dependencies:
@@ -27,7 +27,7 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  mocktail: ^1.0.4
+  mocktail: ^1.0.5
 
 flutter:
   plugin:

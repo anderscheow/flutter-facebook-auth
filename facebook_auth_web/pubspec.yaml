@@ -14,7 +14,7 @@ dependencies:
   flutter_web_plugins:
     sdk: flutter
   flutter_facebook_auth_platform_interface: ^6.1.2
-  web: ^1.0.0
+  web: ^1.1.1
   # flutter_facebook_auth_platform_interface:
     # path: ../facebook_auth_platform_interface
   

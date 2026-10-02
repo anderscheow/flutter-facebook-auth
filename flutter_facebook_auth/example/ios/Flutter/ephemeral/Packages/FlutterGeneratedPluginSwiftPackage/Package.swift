@@ -9,26 +9,26 @@ import PackageDescription
 let package = Package(
     name: "FlutterGeneratedPluginSwiftPackage",
     platforms: [
-        .iOS("13.0")
+        .iOS("15.0")
     ],
     products: [
         .library(name: "FlutterGeneratedPluginSwiftPackage", type: .static, targets: ["FlutterGeneratedPluginSwiftPackage"])
     ],
     dependencies: [
-        .package(name: "url_launcher_ios", path: "../.packages/url_launcher_ios-6.4.1"),
-        .package(name: "permission_handler_apple", path: "../.packages/permission_handler_apple-9.4.9"),
         .package(name: "flutter_facebook_auth", path: "../.packages/flutter_facebook_auth"),
         .package(name: "flutter_secure_storage_darwin", path: "../.packages/flutter_secure_storage_darwin-0.3.2"),
+        .package(name: "permission_handler_apple", path: "../.packages/permission_handler_apple-9.6.2"),
+        .package(name: "url_launcher_ios", path: "../.packages/url_launcher_ios-6.4.2"),
         .package(name: "FlutterFramework", path: "../.packages/FlutterFramework")
     ],
     targets: [
         .target(
             name: "FlutterGeneratedPluginSwiftPackage",
             dependencies: [
-                .product(name: "url-launcher-ios", package: "url_launcher_ios"),
-                .product(name: "permission-handler-apple", package: "permission_handler_apple"),
                 .product(name: "flutter-facebook-auth", package: "flutter_facebook_auth"),
                 .product(name: "flutter-secure-storage-darwin", package: "flutter_secure_storage_darwin"),
+                .product(name: "permission-handler-apple", package: "permission_handler_apple"),
+                .product(name: "url-launcher-ios", package: "url_launcher_ios"),
                 .product(name: "FlutterFramework", package: "FlutterFramework")
             ]
         )
